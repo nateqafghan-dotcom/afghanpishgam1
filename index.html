@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>افغان پیشگام | تولید سیم مفتول در هرات</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <style>
+    /* لینک‌ها رو ساده‌تر می‌کنیم */
+    .navbar-nav .nav-link {
+      padding: 0; /* حذف padding */
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: whitesmoke;
+      text-decoration: underline;
+      background: none;
+      box-shadow: none;
+    }
+
+    /* فاصله آیکون و متن */
+    .nav-link .bi {
+      font-size: 1.2rem;
+      vertical-align: middle;
+      margin-left: 6px; /* چون راست به چپ است */
+    }
+    hr{
+     color: black;
+     margin: 50px 200px;
+     border-style:dotted 4px;
+    }
+    .card-img-top {
+      height: 300px;
+      object-fit: cover; /* برش زیبا بدون کشیدگی */
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* بزرگ شدن کارت هنگام هاور */
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    /* بخش اطلاعات اضافی مخفی */
+    .extra-info {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    /* نمایش اطلاعات اضافی هنگام هاور کارت */
+    .card:hover .extra-info {
+      max-height: 100px; /* ارتفاع تقریبی، می‌تونی زیاد کنی */
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark "style="background-color:blue;>
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <i class="bi bi-house-door-fill"></i> خانه
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="منوی ناوبری"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#about">
+            <i class="bi bi-info-circle"></i> درباره ما
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#product">
+            <i class="bi bi-box-seam"></i> محصولات
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="tel:0796962525">
+            <i class="bi bi-telephone-fill"></i> تماس با ما
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container" id="home">
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <h1 style="font-size:65px;"> شرکت  افغان پیشگام یک انتخاب عالی در عرصه صنعت سیم</h1>
+  <br>
+</div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12">
+<img src="assets/images/wire.png" class="img-fluid rounded-pill" alt="Responsive image">
+
+</div>
+</div>
+</div>
+<br>
+  <p style="font-size: 30px; text-align: center;">ما متخصص در تولید سیم‌های مفتول با کیفیت بالا برای بازار افغانستان و کشورهای همسایه هستیم.</p>
+<br>
+
+<hr class="line">
+<!--اینجا شروع  کارت ها است-->
+<h2 style="text-align: center; font-size: 60px;" id="product">محصولات ما</h2>
+<div class="container py-4">
+  <div class="row g-4 justify-content-center">
+
+    <!-- محصول اول -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 text-center shadow-sm">
+        <img src="assets/images/wire.png" class="card-img-top" alt="محصول ۱" />
+        <div class="card-body">
+          <h5 class="card-title">مفتول</h5>
+             <p class="extra-info">
+             سایز های مختلف موجود است از SWG (0-13)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- محصول دوم -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card h-100 text-center shadow-sm">
+        <img src="assets/images/wirecored.png" class="card-img-top" alt="محصول ۲" />
+        <div class="card-body">
+          <h5 class="card-title">سیم آلمونیم با حایق تاری</h5>
+             <p class="extra-info">
+             سایز های مختلف موجود است از SWG (0-13)
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--اینجا پاین کد کارت ها است-->
+<div >
+  <hr>
+  <h2 style="text-align: center; font-size: 40px;" id="about">درباره شرکت</h2>
+  <p style="text-align: center; font-size: 20px;" class="container">افغان پیشگام از سال ١٤٠٠ با هدف تولید محصولات صنعتی با کیفیت در حوزه سیم مفتول و سیم تاری فعالیت می‌کند.و در اکثر ولایات افغانستان، کابل،هرات... و دیگر ولایت کشور نمایندگان فعال دارد.</p>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+  <h2 style="text-align: center; font-size: 40px;">تماس با ما</h2>
+  <center>
+  <p>
+   <i class="bi bi-geo-alt-fill"></i>
+    <a href="https://maps.app.goo.gl/bgKeb2rVQuaFcQjh9" target="_blank" rel="noopener noreferrer">
+      هرات، افغانستان - فاز ۳ مرسل ۳
+    </a>
+</p>
+<p>
+  <i class="bi bi-telephone-fill"></i>
+   <a href="tel:0705792827">0705792827</a> - 
+  <a href="tel:0796962525">0796962525</a>
+</p>
+<p>
+  <i class="bi bi-envelope-fill"></i>
+  <a href="mailto:afghanpishgam1@gmail.com">afghanpishgam1@gmail.com</a>
+</p>
+</center>
+</div>
+<br>
+<footer style="text-align: center;">
+  © 2025  شرکت افغان پیشگام
+</footer>
+<br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
